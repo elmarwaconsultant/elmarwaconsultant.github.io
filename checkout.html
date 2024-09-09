@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Cart</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            font-family: "Cairo", sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            color: #09757a;
+        }
+
+        .checkout-container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #09757a;
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        .cart-items {
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 20px;
+        }
+
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .cart-item:last-child {
+            border-bottom: none;
+        }
+
+        .item-info {
+            display: flex;
+            align-items: center;
+        }
+
+        .item-info i {
+            font-size: 24px;
+            color: #0073e6;
+            margin-right: 15px;
+        }
+
+        .item-info h3 {
+            margin: 0;
+            font-size: 18px;
+            color: #333;
+        }
+
+        .item-info p {
+            margin: 5px 0 0;
+            font-size: 14px;
+            color: #888;
+        }
+
+        .item-price p {
+            margin: 0;
+            font-size: 20px;
+            color: #09757a;
+            font-weight: bold;
+        }
+
+        .remove-item {
+            background-color: #ff5a5a;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            font-size: 14px;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        .remove-item:hover {
+            background-color: #ff0000;
+        }
+
+        .summary {
+            margin-bottom: 20px;
+            padding: 10px 0;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+        }
+
+        .summary-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+        }
+
+        .total {
+            font-weight: bold;
+            font-size: 18px;
+            border-top: 1px solid #ddd;
+            padding-top: 10px;
+        }
+
+        .payment-section {
+            margin-top: 20px;
+        }
+
+        .payment-section h3 {
+            margin-bottom: 20px;
+            color: black;
+            font-size: 25px;
+            font-weight: 600;
+        }
+
+        .input-group {
+            margin-bottom: 15px;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            transition: border-color 0.3s ease;
+        }
+
+        .input-group input:focus {
+            border-color: #0073e6;
+        }
+
+        .checkout-btn {
+            width: 100%;
+            padding: 12px;
+            background-color: #09757a;
+            color: #fff;
+            border: none;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 4px;
+            margin-top: 20px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .checkout-btn:hover {
+            background-color: #005bb5;
+        }
+        .checkout-btn {
+    display: block;          /* Makes the anchor behave like a block element */
+    width: 100%;             /* Full width */
+    padding: 12px;           /* Padding similar to the original button */
+    background-color: #09757a;
+    color: #fff;
+    text-align: center;      /* Center the text */
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+    text-decoration: none;   /* Remove underline from the link */
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.checkout-btn:hover {
+    background-color: #005bb5;
+}
+
+    </style>
+</head>
+<body>
+
+<div class="checkout-container">
+    <h2>Your Cart</h2>
+
+    <!-- Cart Items -->
+    <div class="cart-items">
+        <div class="cart-item">
+            <div class="item-info">
+                <i class="fas fa-server"></i>
+                <div>
+                    <h3>Web Hosting Economy</h3>
+                    <p>12 months at EGP1,758/mo</p>
+                </div>
+            </div>
+            <div class="item-price">
+                <p>EGP14,767</p>
+                <button class="remove-item"><i class="fas fa-trash-alt"></i> Remove</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pricing Summary -->
+    <div class="summary">
+        <div class="summary-item">
+            <span>Subtotal:</span>
+            <span>EGP14,767
+            </span>
+        </div>
+        <div class="summary-item">
+            <span>Tax:</span>
+            <span>EGP218</span>
+        </div>
+        <div class="summary-item total">
+            <span>Total:</span>
+            <span>EGP14,985</span>
+        </div>
+    </div>
+
+    <!-- Payment Section -->
+    <div class="payment-section">
+        <h3>Customer Information</h3>
+        <form>
+            <div class="input-group">
+                <label for="card-name"><i class="fas fa-user"></i> Customer Name</label>
+                <input type="text" id="card-name" required>
+            </div>
+            <div class="input-group">
+                <label for="card-number"><i class="fas fa-envelope"></i> Email Address</label>
+                <input type="text" id="card-number" required>
+            </div>
+            <div class="input-group">
+                <label for="cvv"><i class="fas fa-lock"></i> Password</label>
+                <input type="password" id="cvv" required>
+            </div>
+            <a href="https://www.example.com/your-link" class="checkout-btn">
+                <i class="fas fa-shopping-cart"></i> Complete Purchase
+            </a>
+        
+        </form>
+    </div>
+</div>
+
+<script>
+    // Script to handle remove item functionality
+    document.querySelectorAll('.remove-item').forEach(button => {
+        button.addEventListener('click', function() {
+            const item = this.closest('.cart-item');
+            item.remove();
+
+            // Recalculate total (for simplicity, this just removes the item from the DOM)
+            recalculateTotal();
+        });
+    });
+
+    function recalculateTotal() {
+        let subtotal = 0;
+        document.querySelectorAll('.item-price p').forEach(price => {
+            subtotal += parseFloat(price.innerText.replace('$', ''));
+        });
+
+        const tax = subtotal * 0.09; // Assume 9% tax rate
+        const total = subtotal + tax;
+
+        document.querySelector('.summary-item span:nth-child(2)').innerText = `$${subtotal.toFixed(2)}`;
+        document.querySelector('.summary-item:nth-child(2) span:nth-child(2)').innerText = `$${tax.toFixed(2)}`;
+        document.querySelector('.total span:nth-child(2)').innerText = `$${total.toFixed(2)}`;
+    }
+</script>
+
+</body>
+</html>
