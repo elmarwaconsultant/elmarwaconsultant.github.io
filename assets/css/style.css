@@ -3212,6 +3212,7 @@ hr {
 .services-area1 .single-service-cap .service-cap {
     padding: 20px;
     background: #fcfdff;
+    height: 23rem;
 }
 
 .services-area1 .single-service-cap .service-cap h4 {
@@ -7523,7 +7524,6 @@ Earthy Grey: #5F6A6A
     }
 }
 .service-cap p {
-    font-weight: 350;
     font-family: Tajawal, sans-serif;
 }
 
