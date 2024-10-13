@@ -169,14 +169,27 @@
     
                           
                           <div class="gallery">
-                            <img src="../assets/img/gallery/idku2.jpg" alt="Image 1">
-                            <img src="../assets/img/gallery/adco.jpg" alt="Image 2">
+                            <!-- Image Item -->
+                            <div class="gallery-item">
+                                <img src="../assets/img/gallery/idku2.jpg" alt="Image 1" onclick="openFullSize(this)">
+                            </div>
+                            
+                            <div class="gallery-item">
+                                <img src="../assets/img/gallery/adco.jpg" alt="Image 2" onclick="openFullSize(this)">
+                            </div>
+
+                            <!-- Video Item -->
+                            <div class="gallery-item">
+                                <iframe src="https://player.vimeo.com/video/1018888917?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" title="test1"></iframe>
+                            </div>
+                            
                         </div>
                         
-                        <div class="video-gallery">
-                            <iframe src="https://player.vimeo.com/video/1018888917?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" title="test1"></iframe>
+                        <!-- Fullscreen Overlay -->
+                        <div id="fullscreen-overlay" class="overlay" onclick="closeFullSize()">
+                            <span class="close-btn">&times;</span>
+                            <img id="full-img" src="" alt="Full Size Image">
                         </div>
-                          
                           
                           
                             <div class="details-caption">
@@ -310,7 +323,7 @@
     <script src="../assets/js/jquery.validate.min.js"></script>
     <script src="../assets/js/mail-script.js"></script>
     <script src="../assets/js/jquery.ajaxchimp.min.js"></script>
-
+    <script src="../assets/js/script.js"></script>
     <!-- Jquery Plugins, main Jquery -->
     <script src="../assets/js/plugins.js"></script>
     <script src="../assets/js/main.js"></script>
