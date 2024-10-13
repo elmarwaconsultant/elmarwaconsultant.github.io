@@ -4574,7 +4574,6 @@ support-company-area .support-wrapper .left-content .support-caption p.pera-top 
     font-size: 36px;
     font-weight: 700;
     line-height: 1.2;
-    font-family: "Teko", sans-serif;
 }
 
 .latest-blog-area .area-heading {
@@ -7323,7 +7322,7 @@ del {
     overflow: hidden;
     position: relative;
 }
-
+/*
 .slide {
     width: 100%;
     display: none;
@@ -7385,7 +7384,7 @@ del {
     height: auto;
     filter: blur(2px)
 }
-
+*/
 .text-overlay {
     position: absolute;
     top: 50%;
@@ -7806,4 +7805,7 @@ h3 {
         font-size: 35px;
     }
   }
-    
+.arabic-li {
+    list-style-type: arabic-indic;
+    padding: 15px;;
+}
