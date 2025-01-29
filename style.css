@@ -12154,3 +12154,16 @@ textarea {
 
 /* image ال 8 */
 
+
+
+@media (max-width: 420px) {
+  .tp-caption-main{
+    font-size: 22px !important;
+    font-weight: bold;
+  }
+  .ground-text{
+    font-size: 20px !important;
+    font-weight: bold;
+    margin-top: 15px;
+  }
+}
