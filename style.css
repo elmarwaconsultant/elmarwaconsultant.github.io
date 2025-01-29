@@ -10783,6 +10783,7 @@ ol.style-default li:last-child {
 }
 .panel-cinfo li .panel-list-text {
   padding-left: 14px;
+  line-height: 1.5;
 }
 .panel-list-icon i:before {
   font-size: 18px;
