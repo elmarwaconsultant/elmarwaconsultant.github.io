@@ -12146,7 +12146,9 @@ textarea {
 
 
 
-
+.footerWithoutPadding{
+  padding-bottom: 0 !important
+}
 
 
 /* image ال 8 */
