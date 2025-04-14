@@ -12167,3 +12167,65 @@ textarea {
     margin-top: 15px;
   }
 }
+
+
+
+
+
+
+
+
+  .highlight-bold {
+    font-weight: bold;
+    color: #ffcc00; /* اللون الأصفر المستخدم في الصورة */
+  }
+  .description-container {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #fff;
+  }
+  .main-heading {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ffcc00; /* نفس لون العنوان */
+  }
+
+.language-toggle {
+  display: flex; /* جعل الزر بمحاذاة العناصر أفقياً */
+  align-items: center; /* ضبط التوسيط */
+  margin-left: 20px; /* إضافة مسافة بين Contact والزر */
+}
+
+.language-btn {
+  padding: 8px 15px;
+  font-size: 14px;
+  background-color: #ffcc00;
+  color: #000;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap; /* منع انكسار النص إلى أسطر */
+  height: 40px; /* ضبط الارتفاع */
+  min-width: 120px; /* جعل الزر عريضًا بما يكفي */
+}
+
+.language-btn:hover {
+  background-color: #ffdb4d;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

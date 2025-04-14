@@ -46,26 +46,33 @@
                     <nav id="site-navigation" class="main-navigation">
                       <ul class="menu">
                         <li class="menu-item-has-children">
-                          <a href="index.html">Home</a>
+                          <a href="index.html" data-en="Home" data-ar="الصفحة الرئيسية">Home</a>
                         </li>
 
                         <li class="menu-item-has-children">
-                          <a href="about-us.html">About Us</a>
+                          <a href="about-us.html" data-en="About Us" data-ar="من نحن" >About Us</a>
                         </li>
 
                         <li class="menu-item-has-children">
-                          <a href="servcies-detail-1.html">Services</a>
+                          <a href="servcies-detail-1.html" data-en="Services" data-ar="الخدمات">Services</a>
                         </li>
 
                          
                           <li class="menu-item-has-children ">
-                          <a href="project1.html">Projects</a>
+                          <a href="project1.html" data-en="Projects" data-ar="المشاريع">Projects</a>
                         </li>
 
 
                         <li class="current-menu-item current-menu-ancestor">
-                          <a href="contact.html">Contact</a>
+                          <a href="contact.html" data-en="Contact" data-ar="تواصل معنا">Contact</a>
                         </li>
+                        
+
+                     <li>
+            <button id="language-toggle" class="language-btn">🌍 English</button>
+        </li>
+
+
                       </ul>
                     </nav>
                   </div>
@@ -249,22 +256,33 @@
                           id="menu-main-menu"
                           class="mobile_mainmenu none-style"
                         >
-                          <li
-                            class="menu-item-has-children current-menu-item current-menu-ancestor"
-                          >
-                            <a href="index.html">Home</a>
-                          </li>
-                          <li class="menu-item-has-children">
-                            <a href="about-us.html">About Us</a>
-                          </li>
-                          <li class="menu-item-has-children">
-                            <a href="servcies-detail-1.html">Services</a>
-                          </li>
+                         
 
-                          <li class="menu-item-has-children">
-                            <a href="./project1.html">Projects</a>
-                          </li>
-                          <li><a href="contact.html">Contact</a></li>
+
+                         <li class="menu-item-has-children current-menu-item current-menu-ancestor">
+                          <a href="index.html" data-en="Home" data-ar="الصفحة الرئيسية">Home</a>
+                        </li>
+
+                        <li class="menu-item-has-children">
+                          <a href="about-us.html" data-en="About Us" data-ar="من نحن" >About Us</a>
+                        </li>
+
+                        <li class="menu-item-has-children">
+                          <a href="servcies-detail-1.html" data-en="Services" data-ar="الخدمات">Services</a>
+                        </li>
+
+                         
+                          <li class="menu-item-has-children ">
+                          <a href="project1.html" data-en="Projects" data-ar="المشاريع">Projects</a>
+                        </li>
+
+
+                        <li class="current-menu-item current-menu-ancestor">
+                          <a href="contact.html" data-en="Contact" data-ar="تواصل معنا">Contact</a>
+                        </li>
+                                 <li>
+            <button id="language-toggle" class="language-btn">🌍 English</button>
+        </li>
                         </ul>
                       </div>
                     </div>
@@ -434,10 +452,10 @@
         >
           <div class="dcell">
             <div class="container">
-              <h1 class="page-title">Contact</h1>
+              <h1 class="page-title" data-en="Contact" data-ar="تواصل معنا" >Contact</h1>
               <ul id="breadcrumbs" class="breadcrumbs none-style">
-                <li><a href="index.html">Home</a></li>
-                <li class="active">Contacts</li>
+                <li><a href="index.html" data-en="Home" data-ar="الصفحة الرئيسية">Home</a></li>
+                <li class="active" data-en="Contacts" data-ar="تواصل معنا">Contacts</li>
               </ul>
             </div>
           </div>
@@ -449,8 +467,9 @@
           <div class="row">
             <div class="col-lg-6 align-self-center mb-5 mb-lg-0">
               <div class="contact-left">
-                <h2>Get in Touch</h2>
-                <p class="font14">
+                <h2 data-en="Get in Touch" data-ar="تواصل معنا" >Get in Touch</h2>
+                <p class="font14" data-en=" Your email address will not be published. Required fields are
+                  marked *" data-ar=" * لن يتم نشر بريدك الإلكتروني. الحقول المطلوبة محددة بعلامة .">
                   Your email address will not be published. Required fields are
                   marked *
                 </p>
@@ -464,7 +483,7 @@
                   <div class="main-form">
                     <p>
                       <label for="name">
-                        <span class="error" id="err-name"
+                        <span class="error" id="err-name" data-en="please enter name" data-ar="برجاء ادخال الاسم"
                           >please enter name</span
                         ></label
                       >
@@ -476,15 +495,17 @@
                         class=""
                         aria-invalid="false"
                         placeholder="Your Name *"
+                        data-en="Your Name *"
+                        data-ar=" *اسمك "
                         required
                       />
                     </p>
                     <p>
                       <label for="email">
-                        <span class="error" id="err-email"
+                        <span class="error" id="err-email"  data-en="please enter e-mail" data-ar="برجاء ادخال البريد الالكترومي"
                           >please enter e-mail</span
                         >
-                        <span class="error" id="err-emailvld"
+                        <span class="error" id="err-emailvld"  data-en="e-mail is not a valid format" data-ar="  البريد الاكتروني غير صحيح"
                           >e-mail is not a valid format</span
                         >
                       </label>
@@ -497,6 +518,8 @@
                         class=""
                         aria-invalid="false"
                         placeholder="Your Email *"
+                        data-en="Your Email *"
+                        data-ar=" *البريد الالكتروني "
                         required
                       />
                     </p>
@@ -510,19 +533,24 @@
                         class=""
                         aria-invalid="false"
                         placeholder="Message..."
+                        data-en="Message"
+                        data-ar="رسالتك  "
                         required
                       ></textarea>
                     </p>
                     <p>
-                      <button type="submit" id="send" class="octf-btn">
+                      <button type="submit" id="send" class="octf-btn" data-en="Send Message"
+                        data-ar=" ارسال الرسالة" >
                         Send Message
                       </button>
                     </p>
                     <div class="clear"></div>
-                    <div class="error" id="err-form">
+                    <div class="error" id="err-form" data-en="There was a problem validating the form please check!"
+                        data-ar="لقد حدثت مشكلة أثناء التحقق من صحة النموذج، يرجى التحقق!">
                       There was a problem validating the form please check!
                     </div>
-                    <div class="error" id="err-timedout">
+                    <div class="error" id="err-timedout" data-en="The connection to the server timed out!"
+                        data-ar=" The connection to the server timed out! ">
                       The connection to the server timed out!
                     </div>
                     <div class="error" id="err-state"></div>
@@ -530,17 +558,22 @@
                 </form>
 
                 <div class="clear"></div>
-                <div id="ajaxsuccess">Successfully sent!!</div>
+                <div id="ajaxsuccess" data-en="Successfully sent!!"
+                        data-ar=" !! تم الارسال بنجاح  ">Successfully sent!!</div>
                 <div class="clear"></div>
               </div>
             </div>
             <div class="col-lg-6">
               <div class="contact-right">
                 <div class="ot-heading">
-                  <span>[ our contact details ]</span>
-                  <h2 class="main-heading">Let's Start a Project</h2>
+                  <span data-en="[ our contact details ]"
+                        data-ar=" تفاصيل الاتصال">[ our contact details ]</span>
+                  <h2 class="main-heading" 
+                     data-en="Let's Start a Project" data-ar="ابدأ مشروعك الآن">Let's Start a Project</h2>
                 </div>
-                <p>
+                <p data-en=" Give us a call or drop by anytime, we endeavour to answer all
+                  enquiries within 24 hours on business days. We will be happy
+                  to answer your questions." data-ar="لا تتردد في الاتصال بنا أو زيارتنا في أي وقت. نحن نحرص على الرد على جميع الاستفسارات في غضون 24 ساعة خلال أيام العمل. يسعدنا مساعدتك والإجابة على أسئلتك.">
                   Give us a call or drop by anytime, we endeavour to answer all
                   enquiries within 24 hours on business days. We will be happy
                   to answer your questions.
@@ -548,9 +581,9 @@
                 <div class="contact-info">
                   <i class="ot-flaticon-place"></i>
                   <div class="info-text">
-                    <h6>OUR ADDRESS:</h6>
+                    <h6 data-en="OUR ADDRESS:" data-ar="عنواننا:">OUR ADDRESS:</h6>
                     <p>
-                      <a href="https://maps.app.goo.gl/K59Jkzdf1sTcXN27A  "">
+                      <a href="https://maps.app.goo.gl/K59Jkzdf1sTcXN27A  " data-en=" 103 Omar Lotfy St, Ibrahimia, Alexandria, Eg " data-ar="103 شارع عمر لطفي، الإبراهيمية، الإسكندرية، مصر">
                       
                       103 Omar Lotfy St, Ibrahimia, Alexandria, Eg </a>    </p>
                   </div>
@@ -558,9 +591,9 @@
                 <div class="contact-info">
                   <i class="ot-flaticon-mail"></i>
                   <div class="info-text">
-                    <h6>OUR MAILBOX:</h6>
+                    <h6 data-en="OUR MAILBOX:" data-ar="البريد الإلكتروني:">OUR MAILBOX:</h6>
                     <p>
-                      <a href="mailto:elmarwaconsultant@gmail.com"
+                      <a href="mailto:elmarwaconsultant@gmail.com" 
                         >elmarwaconsultant@gmail.com</a
                       >
                     </p>
@@ -569,7 +602,7 @@
                 <div class="contact-info">
                   <i class="ot-flaticon-phone-call"></i>
                   <div class="info-text">
-                    <h6>OUR PHONE:</h6>
+                    <h6  data-en="OUR PHONE:" data-ar="رقم الهاتف:">OUR PHONE:</h6>
                     <p><a href="tel:+20 12 24260060">+20 122 426 0060</a></p>
                   </div>
                 </div>
@@ -628,7 +661,7 @@
             <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 mb-4 mb-xl-0">
               <div class="widget-footer">
                 <img src="https://pub-531a94d21df94e5db098f834bbf194b8.r2.dev/images/logo.png" class="footer-logo" alt="" />
-                <p>
+                <p  data-en="Shaping Spaces, Building Dreams, and Delivering Excellence Across Construction, Design, and Renovation." data-ar="نصنع المساحات، نبني الأحلام، ونحقق التميز في مجالات الإنشاء، التصميم، والتجديد.">
                  Shaping Spaces, Building Dreams, and Delivering Excellence Across Construction, Design, and Renovation.
                 </p>
                 <div class="footer-social list-social">
@@ -656,13 +689,13 @@
 
             <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 mb-4 mb-xl-0">
               <div class="widget-footer">
-                <h6>Contacts</h6>
+                <h6 data-en="Contacts" data-ar="تواصل معنا">Contacts</h6>
                 <ul class="footer-list">
                   <li class="footer-list-item">
                     <span class="list-item-icon"
                       ><i class="ot-flaticon-place"></i
                     ></span>
-                 <a class="list-item-text" href="https://www.google.com/maps?ll=31.21556,29.92832&z=21&t=m&hl=ar&gl=EG&mapclient=embed&cid=9597438106313546961" target="_blank">
+                 <a data-en="103 Omar Lotfy St, Ibrahimia, Alexandria, Eg " data-ar="103 شارع عمر لطفي، الإبراهيمية، الإسكندرية، مصر" class="list-item-text" href="https://www.google.com/maps?ll=31.21556,29.92832&z=21&t=m&hl=ar&gl=EG&mapclient=embed&cid=9597438106313546961" target="_blank">
   103 Omar Lotfy St, Ibrahimia, Alexandria, Eg   
 </a>
 
@@ -695,9 +728,9 @@
               <div class="widget-footer widget-contact">
                 <h6>Latest Projects</h6>
                 <ul>
-                  <li><a href="./project1.html">Edko Crossing Project</a></li>
-                  <li><a href="./project2.html">International Coastal Road</a></li>
-                  <li><a href="./project3.html">Infrastructure Solutions & Support</a></li>
+                  <li><a href="./project1.html" data-en="Edko Crossing Project" data-ar="مشروع إدكو كروسينج">Edko Crossing Project</a></li>
+                  <li><a href="./project2.html" data-en="International Coastal Road" data-ar="الطريق الساحلي الدولي">International Coastal Road</a></li>
+                  <li><a href="./project3.html" data-en="Infrastructure Solutions & Support" data-ar="حلول البنية التحتية والدعم">Infrastructure Solutions & Support</a></li>
                 </ul>
               </div>
             </div>
@@ -711,7 +744,7 @@
   <div class="container">
     <div class="row justify-content-center text-center">
       <div class="col-12">
-        <p class="text-light">
+        <p class="text-light" data-en="Copyright &copy; 2024 All rights reserved | El-Marwa Construction Designs" data-ar="© حقوق النشر 2024 | جميع الحقوق محفوظة | EL MARWA">
           Copyright &copy; 2024 All rights reserved | El-Marwa Construction Designs
         </p>
       </div>

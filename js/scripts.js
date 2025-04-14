@@ -1,3 +1,56 @@
+function switchLanguage(lang = null) {
+  let currentLang = lang || localStorage.getItem("selectedLanguage") || "en";
+  let newLang = lang ? lang : currentLang === "en" ? "ar" : "en";
+
+  // حفظ اللغة في localStorage حتى تبقى محفوظة عند التنقل بين الصفحات
+  localStorage.setItem("selectedLanguage", newLang);
+
+  // تحديث جميع العناصر بناءً على اللغة الجديدة
+  document.querySelectorAll("[data-en]").forEach((element) => {
+    if (element.tagName === "INPUT" || element.tagName === "TEXTAREA") {
+      element.placeholder = element.getAttribute(`data-${newLang}`);
+    } else {
+      element.innerHTML = element.getAttribute(`data-${newLang}`);
+    }
+  });
+
+  // تحديث زر اللغة
+  let languageButton = document.getElementById("language-toggle");
+  if (languageButton) {
+    languageButton.textContent = newLang === "en" ? "🌍 English" : "🌍 العربية";
+  }
+
+  // 🔥 تطبيق التغيير فقط على الهيدر واللوجو دون التأثير على باقي الصفحة
+  let header = document.querySelector(".octf-main-header");
+  let mobileHeader = document.querySelector(".header_mobile");
+  let logo = document.querySelector("#site-logo img");
+
+  if (newLang === "ar") {
+    header.style.direction = "rtl";
+    mobileHeader.style.direction = "rtl";
+    logo.style.transform = "scaleX(1)"; // قلب اللوجو ليطابق اتجاه RTL
+  } else {
+    header.style.direction = "ltr";
+    mobileHeader.style.direction = "ltr";
+    logo.style.transform = "scaleX(1)"; // إعادة اللوجو إلى وضعه الطبيعي
+  }
+}
+
+// 🔥 استعادة اللغة المحفوظة عند تحميل الصفحة
+document.addEventListener("DOMContentLoaded", function () {
+  let savedLanguage = localStorage.getItem("selectedLanguage") || "en";
+  switchLanguage(savedLanguage);
+});
+
+// 🔥 إضافة حدث عند الضغط على زر تغيير اللغة
+document
+  .getElementById("language-toggle")
+  .addEventListener("click", function () {
+    switchLanguage();
+  });
+
+// ****************************************************************************
+
 (function ($) {
   $(".woocommerce-form-coupon-toggle .showcoupon").on("click", function () {
     $(this).toggleClass("active");
