@@ -40,14 +40,33 @@ function switchLanguage(lang = null) {
 document.addEventListener("DOMContentLoaded", function () {
   let savedLanguage = localStorage.getItem("selectedLanguage") || "en";
   switchLanguage(savedLanguage);
+
+  // تأكد من إضافة الحدث بعد تحميل DOM بالكامل
+  addLanguageToggleListener();
 });
 
 // 🔥 إضافة حدث عند الضغط على زر تغيير اللغة
-document
-  .getElementById("language-toggle")
-  .addEventListener("click", function () {
-    switchLanguage();
-  });
+function addLanguageToggleListener() {
+  // إذا كان الزر موجودًا، قم بإضافة الحدث
+  const languageButton = document.getElementById("language-toggle");
+  if (languageButton) {
+    languageButton.addEventListener("click", function () {
+      switchLanguage();
+    });
+  }
+}
+
+// أضف الحدث عند التفاعل مع الـ mobile menu أيضًا
+document.addEventListener("DOMContentLoaded", function () {
+  const mobileLanguageButton = document.querySelector(
+    ".header_mobile #language-toggle"
+  );
+  if (mobileLanguageButton) {
+    mobileLanguageButton.addEventListener("click", function () {
+      switchLanguage();
+    });
+  }
+});
 
 // ****************************************************************************
 
